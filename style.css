@@ -1,0 +1,6 @@
+.bg-hero{
+    background-image: url("https://ik.imagekit.io/kathiravan/Personal%20portfolio/Hero%20Background%20image");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}

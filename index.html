@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kathiravan | Web developer</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="3.4.16.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--Fond - class="font-[Roboto] font-bold text-[28px] leading-[24px] text-[#183A57]"
+Default code:
+<section class=" py-10">
+<div class="2xl:container mx-auto">
+  <div class="w-[90%] mx-auto grid grid-col-1 md:grid-cols-2">
+
+  </div>
+</div>
+</section>-->
+
+  <!--Navbar section starting-->
+  <section class="2xl:container mx-auto fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 py-4 justify-">
+
+      <div class="flex flex-row justify-between p-2 items-center">
+        <a href="#home">
+          <p class="font-[Roboto] font-bold text-center text-[18px] leading-[24px] text-[#183A57]">KATHIRAVAN</p>
+        </a>
+        <div class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em" id="menu" height="1em">
+            <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="hidden" viewbox="0 0 64 64" id="cross" width="1em" height="1em">
+            <path fill="currentColor"
+              d="M62 10.571L53.429 2L32 23.429L10.571 2L2 10.571L23.429 32L2 53.429L10.571 62L32 40.571L53.429 62L62 53.429L40.571 32z">
+            </path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hidden md:block " id="contentlist">
+        <div class="flex flex-col items-center md:flex-row justify-center md:justify-end md:items-center space-x-4">
+          <a href="#home1">
+            <button
+              id="home2" class="hover:bg-yellow-500 hover:rounded-lg p-2 font-[Roboto] font-bold text-[16px] leading-[24px] text-[#183A57]">HOME
+            </button>
+          </a>
+          <a href="#about">
+            <button
+              id="about1" class="hover:bg-yellow-500 hover:rounded-lg p-2 font-[Roboto] font-bold text-[16px] leading-[24px] text-[#183A57]">ABOUT
+            </button>
+          </a>
+          <a href="#project">
+            <button
+              id="project1" class="hover:bg-yellow-500 hover:rounded-lg p-2 font-[Roboto] font-bold text-[16px] leading-[24px] text-[#183A57]">PROJECTS
+            </button>
+          </a>
+          <a href="#contact">
+            <button
+              id="contact1" class="hover:bg-yellow-500 hover:rounded-lg p-2 font-[Roboto] font-bold text-[16px] leading-[24px] text-[#183A57]">CONTACT
+            </button>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    let menuicon = document.getElementById("menu");
+    let crossicon = document.getElementById("cross");
+    let contentlist = document.getElementById("contentlist");
+    let home = document.getElementById("home2");
+    let about = document.getElementById("about1");
+    let project = document.getElementById("project1");
+    let contact = document.getElementById("contact1");
+
+    menuicon.addEventListener("click", () => {
+      menuicon.classList.add("hidden");
+      crossicon.classList.remove("hidden");
+      contentlist.classList.remove("hidden");
+    })
+
+    crossicon.addEventListener("click", () => {
+      menuicon.classList.remove("hidden");
+      crossicon.classList.add("hidden");
+      contentlist.classList.add("hidden");
+    })
+
+    home.addEventListener("click", () => {
+      menuicon.classList.remove("hidden");
+      crossicon.classList.add("hidden");
+      contentlist.classList.add("hidden");
+    })
+
+    about.addEventListener("click", () => {
+      menuicon.classList.remove("hidden");
+      crossicon.classList.add("hidden");
+      contentlist.classList.add("hidden");
+    })
+
+    project.addEventListener("click", () => {
+      menuicon.classList.remove("hidden");
+      crossicon.classList.add("hidden");
+      contentlist.classList.add("hidden");
+    })
+
+    contact.addEventListener("click", () => {
+      menuicon.classList.remove("hidden");
+      crossicon.classList.add("hidden");
+      contentlist.classList.add("hidden");
+    })
+
+  </script>
+
+  <!--Hero section starting-->
+  <section class=" py-10 bg-hero mt-[70px]" id="home1">
+    <div class="2xl:container mx-auto h-[90%]">
+
+      <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-1 justify-center items-center h-[90%]">
+        <div class="flex flex-col justify-center items-center gap-10 ">
+          <p
+            class="font-[Roboto] text-center font-extrabold text-[60px] leading-[90px] transform transition duration-200 hover:scale-110">
+            Hey, I'm
+            KATHIRAVAN
+          </p>
+          <p
+            class="w-[60%] font-[Roboto] text-center font-normal text-[22px] leading-[35px] text-gray-600 transform transition duration-200 hover:scale-110">
+            A
+            Result-Oriented Web Developer building and managing Websites and Web Applications that
+            leads
+            to
+            the success of the overall product</p>
+          <a href="#project">
+            <button
+              class="hover:translate-y-2 hover:transition hover:ease-in-out font-[Roboto] font-normal text-[22px] leading-[30px] bg-[#BDA000] text-white px-7 py-3 rounded-lg">
+              PROJECTS
+            </button>
+          </a>
+
+        </div>
+
+        <!-- <div class="mx-auto rounded-2xl shadow-2xl">
+          <a href="#">
+            <img class="h-[400px] w-[450px] rounded-2xl transform transition duration-200 hover:scale-110"
+              src="https://ik.imagekit.io/kathiravan/Personal%20portfolio/Personal_photo.jpg" alt="Bonnie Avatar" />
+          </a>
+        </div> -->
+      </div>
+
+    </div>
+  </section>
+  <!--hero section ending-->
+
+  <!--About section starting-->
+  <section class=" py-10 bg-[#FAFAFA]" id="about">
+    <div class="2xl:container mx-auto">
+      <div class="w-[90%] mx-auto grid grid-cols-1">
+        <div class="flex flex-col justify-center items-center gap-4 p-4 py-20">
+          <p class="font-[Roboto] font-bold text-[40px] leading-[60px]">ABOUT ME</p>
+          <p class="font-[Roboto] font-medium text-[20px] leading-[32px] text-[#6E5554]">Here you
+            will find
+            more information about me, what I do, and my current skills mostly in terms of programming
+            and
+            technology</p>
+        </div>
+      </div>
+
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+        <div class="p-4 space-y-4 shadow-2xl rounded-2xl transform transition duration-200 hover:scale-105">
+          <p class="font-[Roboto] font-bold text-[28px] leading-[42px]">Get to know me!</p>
+          <p class="font-[Roboto] font-normal text-[18px] leading-[31px] text-[#666767]">I'm a <span
+              class="text-[#666767] font-bold">Fullstack Web Developer</span> building and managing
+            the Front-end of Websites and Web Applications that leads to the success of the overall
+            product. Check out some of my work in the <span class="font-bold text-[#666767]">Projects</span>
+            section.</p>
+          <p class="font-[Roboto] font-normal text-[18px] leading-[31px] text-[#666767]">I also like
+            sharing content related to the stuff that I have learned over the years in <span
+              class="text-[#666767] font-bold">Web Development</span> so it can help other people of
+            the Dev Community. Feel free to Connect or Follow me on my Linkedin and Instagram where I
+            post useful content related to Web Development and Programming</p>
+          <p class="font-[Roboto] font-normal text-[18px] leading-[31px] text-[#666767]">I'm open to
+            <span class="text-[#666767] font-bold">Job</span> opportunities where I can contribute,
+            learn
+            and grow. If you have a good opportunity that matches my skills and experience then don't
+            hesitate to <span class="text-[#666767] font-bold">contact</span> me.
+          </p>
+          <a href="#contact">
+            <button
+              class="hover:translate-y-2 hover:transition hover:ease-in-out font-[Roboto] font-bold text-[16px] leading-[24px] bg-[#BDA000] text-white px-7 py-3 rounded-lg">
+              CONTACT
+            </button>
+          </a>
+
+        </div>
+
+        <div class="p-4 space-y-4">
+          <p class="font-[Roboto] font-bold text-[28px] leading-[42px] px-10">My Skills</p>
+          <div class=" w-[90%] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-4 p-2">
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              HTML</p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              CSS</p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              JavaScript
+            </p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              Tailwind CSS
+            </p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              React</p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              Angular</p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              GIT</p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              Github</p>
+            <p
+              class="font-[Roboto] font-semibold text-[16px] text-center leading-[24px] text-[#666767] bg-[#E7E6E6] px-7 py-3 rounded-lg transform transition duration-200 hover:scale-110">
+              Universal design</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!--About section ending-->
+
+  <!--Project section starting-->
+  <section class="py-10 bg-[#FEFFFE]" id="project">
+    <div class="2xl:container mx-auto">
+
+      <div class="w-[90%] mx-auto grid grid-col-1">
+        <div class="flex flex-col justify-center items-center gap-4 p-4 py-20">
+          <p class="font-[Roboto] font-bold text-[40px] leading-[60px] text-[#183A57]">Projects</p>
+          <p class="font-[Roboto] font-medium text-[20px] leading-[32px] text-[#666767]">Here you will
+            find
+            some of the personal and clients projects that I created with each project containing its
+            own
+            case study</p>
+        </div>
+      </div>
+
+      <div class="w-[90%] mx-auto grid grid-cols-1">
+
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 justify-center">
+          <div class="flex flex-row justify-center items-center">
+            <img alt="Project-1" class="h-[80%] w-[40%] transform transition duration-200 hover:scale-110"
+              src="https://ik.imagekit.io/kathiravan/Personal%20portfolio/2.jpg">
+          </div>
+
+          <div class="flex flex-col justify-center items-start gap-4 p-4 px-15">
+            <p class="font-[Roboto] font-bold text-[28px] leading-[42px] text-[#183A57]">
+              WINKELEN</p>
+            <p class="font-[Roboto] font-normal text-[18px] leading-[31px] text-[#666767]">An
+              Ecommerce App
+              for product to view in AR and help local manufacturer to boost their
+              sell rate.</p>
+            <a href="https://github.com/KATHIRAVAN-GITHUB/WINKELEN" target="_blank">
+              <button
+                class="hover:translate-y-2 hover:transition hover:ease-in-out font-[Roboto] font-bold text-[16px] leading-[24px] bg-[#BDA000] text-white px-7 py-3 rounded-lg">
+                Live
+                Link
+              </button>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+          <div class="flex flex-row justify-center items-center">
+            <img alt="Project-2" class="h-[100%] w-[100%] transform transition duration-200 hover:scale-110"
+              src="https://ik.imagekit.io/kathiravan/Watches/Screenshot%202025-02-12%20195335.png">
+          </div>
+
+          <div class="flex flex-col justify-center items-start gap-4 p-8 px-15">
+            <p class="font-[Roboto] font-bold text-[28px] text-center leading-[42px] text-[#183A57]">
+              TITAN</p>
+            <p class="font-[Roboto] font-normal text-[18px] text-center leading-[31px] text-[#666767]">
+              Website for Titan watches.</p>
+            <a href="https://titan01.vercel.app/" target="_blank">
+              <button
+                class="hover:translate-y-2 hover:transition hover:ease-in-out font-[Roboto] font-bold text-[16px] leading-[24px] bg-[#BDA000] text-white px-7 py-3 rounded-lg">
+                Live
+                Link
+              </button>
+            </a>
+
+          </div>
+          <p></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Project section ending-->
+
+  <!--contact section starting-->
+  <section class=" py-10 bg-hero" id="contact">
+    <div class="2xl:container mx-auto h-[100%]">
+
+      <div class="w-[90%] mx-auto grid grid-col-1 h-[100%]">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <p class="font-[Roboto] font-extrabold text-[40px] leading-[60px] text-[#183A57]">
+            Contact</p>
+          <p class="font-[Roboto] font-medium text-[20px] leading-[32px] text-[#183A57]">Feel free to
+            Contact
+            me
+            by submitting the form below and I will get back to you as soon as possible</p>
+        </div>
+
+        <div
+          class="w-[55%] mx-auto grid grid-cols-1 justify-center items-center shadow-lg bg-white p-4 rounded-lg space-y-4">
+
+          <div class="space-y-1">
+            <p class="font-[Roboto] font-bold text-[14px] leading-[21px] text-[#666666]">Name</p>
+            <input autocomplete="given-name"
+              class="block w-full rounded-md bg-[#F1F1F0] px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              type="text">
+          </div>
+
+          <div class="space-y-1">
+            <p class="font-[Roboto] font-bold text-[14px] leading-[21px] text-[#666666]">Email</p>
+            <input autocomplete="email"
+              class="block w-full rounded-md bg-[#F1F1F0] px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              name="email" type="email">
+          </div>
+
+          <div class="space-y-1">
+            <p class="font-[Roboto] font-bold text-[14px] leading-[21px] text-[#666666]">Message</p>
+            <textarea
+              class="block w-full rounded-md bg-[#F1F1F0] px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              rows="3"></textarea>
+          </div>
+
+          <div class="flex flex-row justify-end">
+            <button
+              class="hover:translate-y-2 hover:transition hover:ease-in-out font-[Roboto] font-bold text-[16px] leading-[24px] bg-[#BDA000] text-white px-7 py-3 rounded-lg">
+              SUBMIT
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!--contact section ending-->
+
+  <!--Footer section starting-->
+  <section class=" py-10">
+    <div class="2xl:container mx-auto">
+      <div class="w-[90%] mx-auto grid grid-col-1">
+
+        <div class="flex flex-row justify-between items-center">
+          <div class="w-[32%] space-y-4">
+            <p class="font-[Roboto] font-bold text-[22px] leading-[33px] text-black">KATHIRAVAN</p>
+            <p class="font-[Roboto] font-normal text-center text-[15px] leading-[26px] text-black">A
+              Fullstack Web
+              Developer
+              building and managing Websites and Web Applications that leads to the success of the
+              overall
+              product</p>
+          </div>
+
+          <div class="space-y-4">
+            <p class="font-[Roboto] font-bold text-[22px] leading-[33px] text-black">SOCIAL</p>
+            <div class="flex flex-row justify-start items-center gap-4">
+              <svg class="lucide lucide-twitter" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg>
+              <svg class="lucide lucide-instagram" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect height="20" rx="5" ry="5" width="20" x="2" y="2" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+              <svg class="lucide lucide-linkedin" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect height="12" width="4" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              <svg class="lucide lucide-github" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="w-[65%] mx-auto grid grid-col-1 py-5">
+        <div class="flex flex-row justify-center items-center">
+          <p> &copy; 2025 by Kathiravan. All
+            rights reserved.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer section ending-->
+</body>
+
+</html>
